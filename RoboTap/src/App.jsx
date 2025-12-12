@@ -16,7 +16,7 @@ const App = () => {
       <Pricing />
       <Faq />
       <Testimonials />
-      <Download />
+     {/* <Download /> */}
       <Footer />
     </main>
   );
