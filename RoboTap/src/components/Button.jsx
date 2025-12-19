@@ -5,6 +5,7 @@ const Button = ({
   icon,
   children,
   href,
+  target = "_self",
   containerClassName,
   onClick,
   markerFill,
@@ -34,11 +35,13 @@ const Button = ({
   );
   return href ? (
     <a
+      href={href}
+      target={target}
+      rel={target === "_blank" ? "noopener noreferrer" : undefined}
       className={clsx(
         "relative p-0.5 g5 rounded-2xl shadow-500 group",
         containerClassName,
       )}
-      href={href}
     >
       <Inner />
     </a>

@@ -14,28 +14,6 @@ const Pricing = () => {
               Nuestro impacto en la comunidad
             </h3>
 
-           {/* <div className="relative z-4 mx-auto flex w-[375px] rounded-3xl border-[3px] border-s4/25 bg-s1/50 p-2 backdrop-blur-[6px] max-md:w-[310px]">
-              <button
-                className={clsx("pricing-head_btn", monthly && "text-p4")}
-                onClick={() => setMonthly(true)}
-              >
-                Monthly
-              </button>
-              <button
-                className={clsx("pricing-head_btn", !monthly && "text-p4")}
-                onClick={() => setMonthly(false)}
-              >
-                Annual
-              </button>
-
-              <div
-                className={clsx(
-                  "g4 rounded-14 before:h-100 pricing-head_btn_before absolute left-2 top-2 h-[calc(100%-16px)] w-[calc(50%-8px)] overflow-hidden shadow-400 transition-transform duration-500",
-                  !monthly && "translate-x-full",
-                )}
-              />
-            </div> */}
-
             <div className="pricing-bg">
               <img
                 src="/images/bg-outlines.svg"
@@ -94,27 +72,6 @@ const Pricing = () => {
                   >
                     {plan.title}
                   </div>
-
-                 {/* <div className="relative z-2 flex items-center justify-center">
-                    <div
-                      className={clsx(
-                        "h-num flex items-start",
-                        index === 1 ? "text-p3" : "text-p4",
-                      )}
-                    >
-                      ${" "}
-                      <CountUp
-                        start={plan.priceMonthly}
-                        end={monthly ? plan.priceMonthly : plan.priceYearly}
-                        duration={0.4}
-                        useEasing={false}
-                        preserveValue
-                      />
-                    </div>
-                    <div className="small-1 relative top-3 ml-1 uppercase">
-                      / mo
-                    </div>
-                  </div> */}
                 </div>
 
                 <div
@@ -143,12 +100,18 @@ const Pricing = () => {
                 </ul>
 
                 <div className="mt-10 flex w-full justify-center">
-                  <Button icon={plan.icon} >Ver impacto</Button>
+                  <Button
+                    icon={plan.icon}
+                    href={plan.buttonLink}
+                    target="_blank"
+                  >
+                    {plan.buttonText}
+                  </Button>
                 </div>
 
                 {index === 1 && (
                   <p className="small-compact mt-9 text-center text-p3 before:mx-2.5 before:content-['-'] after:mx-2.5 after:content-['-']">
-                    Limited time offer
+                    Cada acción cuenta
                   </p>
                 )}
               </div>

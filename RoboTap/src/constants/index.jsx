@@ -8,6 +8,7 @@ export const features = [
     button: {
       icon: "/images/magictouch.svg",
       title: "Cómo aportar",
+      to: "Impacto", 
     },
   },
   {
@@ -19,9 +20,11 @@ export const features = [
     button: {
       icon: "/images/docs.svg",
       title: "Saber más",
+      to: "Preguntas Frecuentes", 
     },
   },
 ];
+
 
 export const details = [
   {
@@ -50,64 +53,77 @@ export const details = [
 export const faq = [
   {
     id: "0",
-    question: "How easy is it to setup Xora?",
+    question: "¿Qué es RoboTap?",
     answer:
-      "Absolutely! Not only you can upgrade your plan at any time but you also get a prorated discount giving you maximum value for your subscription.",
+      "RoboTap es una iniciativa comunitaria que recolecta tapitas plásticas para apoyar tratamientos de quimioterapia y promover el reciclaje responsable.",
   },
   {
     id: "1",
-    question: "Can I integrate Xora with other platforms?",
+    question: "¿Cómo puedo ayudar?",
     answer:
-      "Absolutely! Not only you can upgrade your plan at any time but you also get a prorated discount giving you maximum value for your subscription.",
+      "Puedes ayudar recolectando tapitas, llevándolas a nuestros puntos de recolección, compartiendo el proyecto en redes sociales o uniéndote como voluntario.",
   },
   {
     id: "2",
-    question: "How often do you add new content?",
+    question: "¿Dónde puedo llevar las tapitas?",
     answer:
-      "Absolutely! Not only you can upgrade your plan at any time but you also get a prorated discount giving you maximum value for your subscription.",
+      "Contamos con puntos físicos de recolección, incluyendo centros educativos y aliados comunitarios. Puedes ver la ubicación exacta en la sección de impacto.",
   },
   {
     id: "3",
-    question: "What your refund policy?",
+    question: "¿A quién se entregan las tapitas recolectadas?",
     answer:
-      "Absolutely! Not only you can upgrade your plan at any time but you also get a prorated discount giving you maximum value for your subscription.",
+      "Las tapitas se entregan a fundaciones aliadas que las transforman en fondos destinados directamente a tratamientos de quimioterapia.",
   },
   {
     id: "4",
-    question: "Do you have corporate plans?",
+    question: "¿El proyecto es transparente?",
     answer:
-      "Absolutely! Not only you can upgrade your plan at any time but you also get a prorated discount giving you maximum value for your subscription.",
+      "Sí. Trabajamos con organizaciones verificadas y compartimos el impacto del proyecto a través de nuestras redes y canales oficiales.",
   },
   {
     id: "5",
-    question: "What happens when I’m out of storage?",
+    question: "¿Puedo ser voluntario?",
     answer:
-      "Absolutely! Not only you can upgrade your plan at any time but you also get a prorated discount giving you maximum value for your subscription.",
+      "Claro que sí. Cualquier persona puede unirse como voluntario, sin importar la edad o experiencia previa.",
   },
   {
     id: "6",
-    question: "Can I upgrade my plan?",
+    question: "¿RoboTap está en un lugar físico?",
     answer:
-      "Absolutely! Not only you can upgrade your plan at any time but you also get a prorated discount giving you maximum value for your subscription.",
+      "Sí, RoboTap cuenta con un punto físico dentro de la UNPHU para facilitar la recolección.",
   },
   {
     id: "7",
-    question: "How do I invite my team?",
+    question: "¿Tienen redes sociales oficiales?",
     answer:
-      "Absolutely! Not only you can upgrade your plan at any time but you also get a prorated discount giving you maximum value for your subscription.",
+      "Sí. Puedes seguirnos en Instagram para ver actualizaciones, entregas y el impacto real del proyecto.",
   },
   {
     id: "8",
-    question: "Do you offer training for individuals and teams?",
+    question: "¿Qué tipo de tapitas se pueden donar?",
     answer:
-      "Absolutely! Not only you can upgrade your plan at any time but you also get a prorated discount giving you maximum value for your subscription.",
+      "Aceptamos tapitas plásticas limpias de botellas de agua, refrescos, jugos y productos similares.",
   },
   {
     id: "9",
-    question: "I’m locked out of my account what do I do?",
+    question: "¿Puedo colaborar como institución o empresa?",
     answer:
-      "Absolutely! Not only you can upgrade your plan at any time but you also get a prorated discount giving you maximum value for your subscription.",
+      "Sí. Instituciones educativas, empresas y comunidades pueden convertirse en aliados y crear nuevos puntos de recolección basados en nuestro modelo.",
   },
+  {
+  id: "10",
+  question: "¿Cómo nació el proyecto RoboTap?",
+  answer:
+    "El proyecto nació como una iniciativa académica en la materia de Administración de Proyectos, por idea del director de carrera Héctor Santillán, con el objetivo de generar impacto social real desde la universidad.",
+},
+{
+  id: "11",
+  question: "¿Quiénes participan en el proyecto?",
+  answer:
+    "RoboTap es desarrollado por estudiantes universitarios y la docente Yorka Perez que nos oriento para maximizar el impacto y desarrollo del proyecto.",
+},
+
 ];
 
 export const plans = [
@@ -115,6 +131,8 @@ export const plans = [
     id: "0",
     title: "Tapitas Recolectadas",
     caption: "Cada tapita suma",
+    buttonText: "Punto de recolección",
+    buttonLink: "https://maps.app.goo.gl/1EfBtZ2N27vh17mF6",
     features: [
       "Ayuda directa a pacientes con quimioterapia",
       "Recolección en puntos comunitarios",
@@ -127,7 +145,9 @@ export const plans = [
   {
     id: "1",
     title: "Organizaciones Aliadas",
-    caption: "Trabajamos junto a fundaciones",
+    caption: "Junto a fundaciones",
+    buttonText: "Síguenos y comparte",
+    buttonLink: "https://www.instagram.com/tapitasxquimio/",
     features: [
       "Entrega transparente de tapitas",
       "Reciclaje responsable",
@@ -138,105 +158,75 @@ export const plans = [
     logo: "/images/plan-2.png",
   },
   {
-    id: "2",
-    title: "Voluntarios & Comunidad",
-    caption: "Un movimiento que crece",
-    features: [
-      "Personas de todas las edades participan",
-      "Ayuda accesible para cualquier comunidad",
-      "Educación sobre reciclaje",
-      "Acciones pequeñas con gran impacto",
-    ],
-    icon: "/images/hexagon.svg",
-    logo: "/images/plan-3.png",
-  },
+  id: "2",
+  title: "Apoyo Académico",
+  caption: "Comunidad educativa",
+  buttonText: "Conoce la escuela",
+  buttonLink: "https://www.instagram.com/unphu_tic/",
+  features: [
+    "Proyecto desarrollado en el entorno educativo",
+    "Participación de estudiantes y docentes",
+    "Innovación social",
+    "Aprendizaje con impacto real",
+  ],
+  icon: "/images/hexagon.svg",
+  logo: "/images/plan-3.png",
+}
 ];
 
-export const testimonials = [
+export const joinMessages = [
   {
     id: "0",
-    name: "Jessica Saunders",
-    role: "Globalnomads",
-    avatarUrl: "/images/testimonials/jessica-saunders.png",
-    comment:
-      "Xora's customer support is second to none! They’re like my tech superheroes, always there when I need them.",
+    message:
+      "Cada tapita recolectada representa esperanza para quienes luchan contra el cáncer.",
   },
   {
     id: "1",
-    name: "Mark Erixon",
-    role: "Vid capital intl",
-    avatarUrl: "/images/testimonials/mark-erixon.png",
-    comment:
-      "I was skeptical at first, but now I can't imagine our content operations without it. It's that impactful.",
+    message:
+      "No necesitas grandes recursos para ayudar, solo ganas de aportar.",
   },
   {
     id: "2",
-    name: "Melanie Hurst",
-    role: "Cyberleap",
-    avatarUrl: "/images/testimonials/melanie-hurst.png",
-    comment:
-      "Adopting this software was a breeze. It's made everyday tasks so much simpler.",
+    message:
+      "Únete a una comunidad que cree en el impacto de las pequeñas acciones.",
   },
   {
     id: "3",
-    name: "Alicia Barker",
-    role: "Cyberleap",
-    avatarUrl: "/images/testimonials/alicia-barker.png",
-    comment:
-      "The analytics feature is like having a personal fortune teller. It's been instrumental in guiding our business decisions.",
+    message:
+      "Tu participación puede cambiar vidas y cuidar el planeta al mismo tiempo.",
   },
   {
     id: "4",
-    name: "Becky Snider",
-    role: "Floclips",
-    avatarUrl: "/images/testimonials/becky-snider.png",
-    comment:
-      "Switched to Xora last month, and I'm already seeing results. Best decision for our team!",
+    message:
+      "Ser voluntario es más que ayudar, es formar parte del cambio.",
   },
   {
     id: "5",
-    name: "Jim Bradley",
-    role: "Vid capital intl",
-    avatarUrl: "/images/testimonials/jim-bradley.png",
-    comment:
-      "The efficiency boost is undeniable. This platform has transformed our workflow, forever.",
+    message:
+      "Juntos transformamos reciclaje en oportunidades de vida.",
   },
 ];
 
 export const logos = [
   {
     id: "0",
-    title: "Afterpay",
-    url: "/images/logos/afterpay.svg",
+    title: "Logo Unphu Informática",
+    url: "/images/logos/logoInformatica.png",
     width: 156,
     height: 48,
   },
   {
     id: "1",
-    title: "Amplitude",
-    url: "/images/logos/amplitude.svg",
+    title: "Tapitas x Quimio",
+    url: "/images/logos/tapitasxquimio.png",
     width: 194,
     height: 48,
   },
   {
     id: "2",
-    title: "Sonos",
-    url: "/images/logos/sonos.svg",
+    title: "UNPHU",
+    url: "/images/logos/UNPHU.webp",
     width: 115,
-    height: 48,
-  },
-  {
-    id: "3",
-    title: "Maze",
-    url: "/images/logos/maze.svg",
-    width: 142,
-    height: 48,
-  },
-  {
-    id: "4",
-    title: "Drips",
-    url: "/images/logos/drips.svg",
-    width: 77,
     height: 48,
   },
 ];
@@ -369,18 +359,50 @@ export const Web = () => {
   );
 };
 
+export const Instagram = () => {
+  return (
+    <svg
+      width="32"
+      height="32"
+      viewBox="0 0 24 24"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M7 2H17C20.3137 2 23 4.68629 23 8V16C23 19.3137 20.3137 22 17 22H7C3.68629 22 1 19.3137 1 16V8C1 4.68629 3.68629 2 7 2Z"
+        stroke="#EAEDFF"
+        strokeWidth="2"
+      />
+      <circle
+        cx="12"
+        cy="12"
+        r="4"
+        stroke="#EAEDFF"
+        strokeWidth="2"
+      />
+      <circle
+        cx="17.5"
+        cy="6.5"
+        r="1.5"
+        fill="#EAEDFF"
+      />
+    </svg>
+  );
+};
+
+
 export const links = [
   {
     id: "0",
-    title: "Ios",
-    icon: <Ios />,
-    url: "#",
+    title: "Instagram Tapitas x Quimio",
+    icon: <Instagram />,
+    url: "https://www.instagram.com/tapitasxquimio/",
   },
   {
     id: "1",
-    title: "Android",
-    icon: <Android />,
-    url: "#",
+    title: "Instagram Escuela de Informática",
+    icon: <Instagram />,
+    url: "https://www.instagram.com/unphu_tic/",
   },
   {
     id: "2",
@@ -390,9 +412,9 @@ export const links = [
   },
   {
     id: "3",
-    title: "Web",
+    title: "Web de la UNPHU",
     icon: <Web />,
-    url: "#",
+    url: "https://unphu.edu.do/",
   },
 ];
 

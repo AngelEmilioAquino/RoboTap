@@ -1,0 +1,29 @@
+{
+  "name": "RoboTap",
+  "short_name": "RoboTap",
+  "description": "RoboTap es un robot de recolección de tapitas que apoya tratamientos de quimioterapia. Pequeñas acciones, grandes cambios.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0f1012",
+  "theme_color": "#0f1012",
+  "orientation": "portrait",
+  "lang": "es",
+  "icons": [
+    {
+      "src": "/images/Robot.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/images/Robot.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "/images/Robot.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}

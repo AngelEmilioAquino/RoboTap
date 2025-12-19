@@ -7,17 +7,14 @@ const Faq = () => {
 
   return (
     <section>
-      <Element name="faq" className="relative">
+      <Element name="Preguntas Frecuentes" className="relative">
         <div className="container relative z-2 py-28">
-          <div>
-            <h3 className="h3 max-md:h5 max-w-640 max-lg:max-w-md mb-7 text-p4">
-              Curiosity didn't kill the cat, it gave it answers.
-            </h3>
-            <p className="body-1 max-lg:max-w-sm">
-              You've got questions, we've got answers.
-            </p>
-          </div>
-
+          <h3 className="h3 max-md:h5 max-w-640 max-lg:max-w-md mb-7 text-p4">
+            ¿Tienes dudas sobre RoboTap?
+          </h3>
+          <p className="body-1 max-lg:max-w-sm">
+            Respuestas para ayudar y sumar al cambio.
+          </p>
           <div className="faq-line_after w-0.5 h-full absolute left-[calc(50%-1px)] top-0 -z-1 bg-s2" />
         </div>
 
@@ -40,7 +37,7 @@ const Faq = () => {
             </div>
           </div>
 
-          <div className="faq-lin_after absolute left-[calc(50%-1px)] top-0 -z-1 h-full w-0.5 bg-s2 max-lg:hidden" />
+          <div className="faq-lin_after absolute left-[calc(50%-1px)] top-0 -z-1 h-full w-0.5 bg-s4 max-lg:hidden" />
         </div>
       </Element>
     </section>
