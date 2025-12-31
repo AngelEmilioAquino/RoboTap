@@ -28,14 +28,21 @@ const PreFooter = () => {
               </p>
 
               <h4 className="mb-4 uppercase tracking-wide text-s3">
-                Redes oficiales
+                Redes oficiales y ubicación
               </h4>
 
               <ul className="flex flex-wrap items-center gap-6">
                 {links.map(({ id, url, icon }) => (
                   <li
                     key={id}
-                    className="download_tech-link download_tech-link_last-before download_tech-link_last-after"
+                    className="
+                      download_tech-link
+                      download_tech-link_last-before
+                      download_tech-link_last-after
+                      basis-[calc(50%-0.75rem)]
+                      sm:basis-auto
+                      flex justify-center
+                    "
                   >
                     <a
                       href={url}

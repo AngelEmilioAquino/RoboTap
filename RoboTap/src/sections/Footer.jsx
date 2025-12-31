@@ -20,19 +20,20 @@ const Footer = () => {
           </div>
 
           <ul className="flex flex-1 justify-center gap-3 max-md:mt-10 md:justify-end">
-            {socials.map(({ id, url, icon, title }) => (
+            {socials.map(({ id, url, icon: Icon, title }) => (
               <li key={id}>
-                <a href={url} className="social-icon" target="_blank">
-                  <img
-                    src={icon}
-                    alt={title}
-                    className="size-1/3 object-contain"
-                  />
+                <a
+                  href={url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={title}
+                  className="social-icon flex size-10 items-center justify-center rounded-full border border-s3 bg-s1 transition-all duration-300 hover:border-s4 hover:scale-110"
+                >
+                  <Icon className="size-5 text-p4" />
                 </a>
               </li>
             ))}
           </ul>
-
         </div>
       </div>
     </footer>

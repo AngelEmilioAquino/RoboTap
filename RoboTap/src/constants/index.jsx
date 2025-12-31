@@ -1,3 +1,5 @@
+import { Linkedin, Github, MessageCircle, Globe } from "lucide-react";
+
 export const features = [
   {
     id: "0",
@@ -310,6 +312,33 @@ export const Windows = () => {
   );
 };
 
+export const MapPin = () => {
+  return (
+    <svg
+      width="32"
+      height="32"
+      viewBox="0 0 24 24"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M12 22C12 22 19 15.6863 19 10.5C19 6.35786 15.866 3 12 3C8.13401 3 5 6.35786 5 10.5C5 15.6863 12 22 12 22Z"
+        stroke="#EAEDFF"
+        strokeWidth="1.8"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      <circle
+        cx="12"
+        cy="10.5"
+        r="2.5"
+        stroke="#EAEDFF"
+        strokeWidth="1.8"
+      />
+    </svg>
+  );
+};
+
 export const Web = () => {
   return (
     <svg
@@ -406,9 +435,9 @@ export const links = [
   },
   {
     id: "2",
-    title: "Windows",
-    icon: <Windows />,
-    url: "#",
+    title: "Ubicación RoboTap UNPHU",
+    icon: <MapPin/>,
+    url: "https://maps.app.goo.gl/1EfBtZ2N27vh17mF6",
   },
   {
     id: "3",
@@ -421,26 +450,27 @@ export const links = [
 export const socials = [
   {
     id: "0",
-    title: "x",
-    icon: "/images/socials/x.svg",
-    url: "#",
+    title: "LinkedIn",
+    icon: Linkedin,
+    url: "https://www.linkedin.com/in/angel-emilio-aquino/",
   },
   {
     id: "1",
-    title: "Threads",
-    icon: "/images/socials/threads.svg",
-    url: "#",
+    title: "GitHub",
+    icon: Github,
+    url: "https://github.com/AngelEmilioAquino",
   },
   {
     id: "2",
-    title: "Instagram",
-    icon: "/images/socials/instagram.svg",
-    url: "#",
+    title: "WhatsApp",
+    icon: MessageCircle,
+    url: "https://wa.me/18094038309?text=Hola%20Angel%20Me%20gustaría%20hablar%20sobre%20un%20proyecto.",
   },
   {
     id: "3",
-    title: "Discord",
-    icon: "/images/socials/discord.svg",
-    url: "#",
+    title: "Portfolio",
+    icon: Globe,
+    url: "https://angelaquino.vercel.app/",
   },
 ];
+
