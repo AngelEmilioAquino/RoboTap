@@ -1,8 +1,6 @@
 <div align="center">
   <br />
-    <a href="https://youtu.be/ukiGFmZ32YA?feature=shared" target="_blank">
       <img src="https://github.com/user-attachments/assets/a582919b-1bdf-4cb2-af44-69b2159cf109" alt="Project Banner">
-    </a>
   <br />
 
   <div>
@@ -11,11 +9,7 @@
     <img src="https://img.shields.io/badge/-Tailwind_CSS-black?style=for-the-badge&logoColor=white&logo=tailwindcss&color=06B6D4" alt="tailwindcss" />
   </div>
 
-<h3 align="center">Modern UI/UX SaaS Website</h3>
-
-   <div align="center">
-     Build this project step by step with our detailed tutorial on <a href="https://www.youtube.com/@javascriptmastery/videos" target="_blank"><b>JavaScript Mastery</b></a> YouTube. Join the JSM family!
-    </div>
+<h3 align="center">Robotap</h3>
 </div>
 
 ## 📋 <a name="table">Table of Contents</a>
@@ -28,26 +22,11 @@
 6. 🔗 [Assets](#links)
 7. 🚀 [More](#more)
 
-## 🚨 Tutorial
-
-This repository contains the code corresponding to an in-depth tutorial available on our YouTube
-channel, <a href="https://www.youtube.com/@javascriptmastery/videos" target="_blank"><b>JavaScript Mastery</b></a>.
-
-If you prefer visual learning, this is the perfect resource for you. Follow our tutorial to learn how to build projects
-like these step-by-step in a beginner-friendly manner!
-
-<a href="https://youtu.be/ukiGFmZ32YA?feature=shared" target="_blank"><img src="https://github.com/sujatagunale/EasyRead/assets/151519281/1736fca5-a031-4854-8c09-bc110e3bc16d" /></a>
-
 ## <a name="introduction">🤖 Introduction</a>
 
-Xora is a Modern UI/UX SaaS website developed using React.js and Tailwind CSS that exemplifies modern UI/UX principles.
-Its sleek design, seamless animations, and overall user experience set a high standard, serving as a reference or
-inspiration for future modern applications or websites in general.
+RoboTap is a university initiative developed at the Pedro Henríquez Ureña National University (UNPHU) that combines technology, sustainability, and social impact to support patients undergoing chemotherapy by recycling plastic bottle caps.
 
-If you're getting started and need assistance or face any bugs, join our active Discord community with over **34k+**
-members. It's a place where people help each other out.
-
-<a href="https://discord.com/invite/n6EdbFJ" target="_blank"><img src="https://github.com/sujatagunale/EasyRead/assets/151519281/618f4872-1e10-42da-8213-1d69e486d02e" /></a>
+Every cap counts. Every action makes a difference. Every contribution makes a real difference.
 
 ## <a name="tech-stack">⚙️ Tech Stack</a>
 
@@ -87,8 +66,8 @@ Make sure you have the following installed on your machine:
 **Cloning the Repository**
 
 ```bash
-git clone https://github.com/adrianhajdin/xora.git
-cd xora
+git clone https://github.com/AngelEmilioAquino/RoboTap.git
+cd robotap
 ```
 
 **Installation**
@@ -533,303 +512,240 @@ export default {
 <summary><code>constants/index.jsx</code></summary>
 
 ```jsx
+import { Linkedin, Github, MessageCircle, Globe } from "lucide-react";
+
 export const features = [
   {
-    id: '0',
-    icon: '/images/feature-1.png',
-    caption: 'Easy integration',
-    title: 'Work smarter not harder',
-    text: "With Xora, tedious tasks are history. Automation and smart processes bring your productivity to new heights. It's like having an extra cup of coffee, but without the jitters.",
+    id: "0",
+    icon: "/images/feature-1.png",
+    caption: "Fácil de usar",
+    title: "Todos pueden ayudar",
+    text: "RoboTap es un robot de madera diseñado como punto de recolección de tapitas ubicado en el Edificio 2 de la UNPHU. Solo debes depositarlas dentro y cada tapita se convierte en apoyo para pacientes de quimioterapia.",
     button: {
-      icon: '/images/magictouch.svg',
-      title: 'Watch the demo',
+      icon: "/images/magictouch.svg",
+      title: "Cómo aportar",
+      to: "Impacto", 
     },
   },
   {
-    id: '1',
-    icon: '/images/feature-2.png',
-    caption: 'Secure & trustworthy',
-    title: 'Sleep easy, we got your back',
-    text: 'Your data security is our priority. With state-of-the-art encryption and robust privacy controls, Xora helps keeps your information secure and locked up tighter than Fort Knox.',
+    id: "1",
+    icon: "/images/feature-2.png",
+    caption: "Impacto transparente",
+    title: "Cada tapita cuenta",
+    text: "Las tapitas recolectadas se entregan a organizaciones que las reciclan y utilizan los fondos para apoyar importantes tratamientos de quimioterapia, llevando ayuda a quienes más la necesitan. Pequeñas acciones, grandes cambios.",
     button: {
-      icon: '/images/docs.svg',
-      title: 'Read the docs',
+      icon: "/images/docs.svg",
+      title: "Saber más",
+      to: "Preguntas Frecuentes", 
     },
   },
 ];
+
 
 export const details = [
   {
-    id: '0',
-    icon: '/images/detail-1.png',
-    title: 'AI automated video editing',
+    id: "0",
+    icon: "/images/detail-1.png",
+    title: "Recolección sencilla",
   },
   {
-    id: '1',
-    icon: '/images/detail-2.png',
-    title: 'Collaborate with your team',
+    id: "1",
+    icon: "/images/detail-2.png",
+    title: "Diseño amigable",
   },
   {
-    id: '2',
-    icon: '/images/detail-3.png',
-    title: 'Ultra fast cloud-engine',
+    id: "2",
+    icon: "/images/detail-3.png",
+    title: "Causa solidaria",
   },
   {
-    id: '3',
-    icon: '/images/detail-4.png',
-    title: '24 / 7 Customer support',
+    id: "3",
+    icon: "/images/detail-4.png",
+    title: "Impacto real",
   },
 ];
 
+
 export const faq = [
   {
-    id: '0',
-    question: 'How easy is it to setup Xora?',
+    id: "0",
+    question: "¿Qué es RoboTap?",
     answer:
-      'Absolutely! Not only you can upgrade your plan at any time but you also get a prorated discount giving you maximum value for your subscription.',
+      "RoboTap es una iniciativa comunitaria que recolecta tapitas plásticas para apoyar tratamientos de quimioterapia y promover el reciclaje responsable.",
   },
   {
-    id: '1',
-    question: 'Can I integrate Xora with other platforms?',
+    id: "1",
+    question: "¿Cómo puedo ayudar?",
     answer:
-      'Absolutely! Not only you can upgrade your plan at any time but you also get a prorated discount giving you maximum value for your subscription.',
+      "Puedes ayudar recolectando tapitas, llevándolas a nuestros puntos de recolección, compartiendo el proyecto en redes sociales o uniéndote como voluntario.",
   },
   {
-    id: '2',
-    question: 'How often do you add new content?',
+    id: "2",
+    question: "¿Dónde puedo llevar las tapitas?",
     answer:
-      'Absolutely! Not only you can upgrade your plan at any time but you also get a prorated discount giving you maximum value for your subscription.',
+      "Contamos con puntos físicos de recolección, incluyendo centros educativos y aliados comunitarios. Puedes ver la ubicación exacta en la sección de impacto.",
   },
   {
-    id: '3',
-    question: 'What your refund policy?',
+    id: "3",
+    question: "¿A quién se entregan las tapitas recolectadas?",
     answer:
-      'Absolutely! Not only you can upgrade your plan at any time but you also get a prorated discount giving you maximum value for your subscription.',
+      "Las tapitas se entregan a fundaciones aliadas que las transforman en fondos destinados directamente a tratamientos de quimioterapia.",
   },
   {
-    id: '4',
-    question: 'Do you have corporate plans?',
+    id: "4",
+    question: "¿El proyecto es transparente?",
     answer:
-      'Absolutely! Not only you can upgrade your plan at any time but you also get a prorated discount giving you maximum value for your subscription.',
+      "Sí. Trabajamos con organizaciones verificadas y compartimos el impacto del proyecto a través de nuestras redes y canales oficiales.",
   },
   {
-    id: '5',
-    question: 'What happens when I’m out of storage?',
+    id: "5",
+    question: "¿Puedo ser voluntario?",
     answer:
-      'Absolutely! Not only you can upgrade your plan at any time but you also get a prorated discount giving you maximum value for your subscription.',
+      "Claro que sí. Cualquier persona puede unirse como voluntario, sin importar la edad o experiencia previa.",
   },
   {
-    id: '6',
-    question: 'Can I upgrade my plan?',
+    id: "6",
+    question: "¿RoboTap está en un lugar físico?",
     answer:
-      'Absolutely! Not only you can upgrade your plan at any time but you also get a prorated discount giving you maximum value for your subscription.',
+      "Sí, RoboTap cuenta con un punto físico dentro de la UNPHU para facilitar la recolección.",
   },
   {
-    id: '7',
-    question: 'How do I invite my team?',
+    id: "7",
+    question: "¿Tienen redes sociales oficiales?",
     answer:
-      'Absolutely! Not only you can upgrade your plan at any time but you also get a prorated discount giving you maximum value for your subscription.',
+      "Sí. Puedes seguirnos en Instagram para ver actualizaciones, entregas y el impacto real del proyecto.",
   },
   {
-    id: '8',
-    question: 'Do you offer training for individuals and teams?',
+    id: "8",
+    question: "¿Qué tipo de tapitas se pueden donar?",
     answer:
-      'Absolutely! Not only you can upgrade your plan at any time but you also get a prorated discount giving you maximum value for your subscription.',
+      "Aceptamos tapitas plásticas limpias de botellas de agua, refrescos, jugos y productos similares.",
   },
   {
-    id: '9',
-    question: 'I’m locked out of my account what do I do?',
+    id: "9",
+    question: "¿Puedo colaborar como institución o empresa?",
     answer:
-      'Absolutely! Not only you can upgrade your plan at any time but you also get a prorated discount giving you maximum value for your subscription.',
+      "Sí. Instituciones educativas, empresas y comunidades pueden convertirse en aliados y crear nuevos puntos de recolección basados en nuestro modelo.",
   },
+  {
+  id: "10",
+  question: "¿Cómo nació el proyecto RoboTap?",
+  answer:
+    "El proyecto nació como una iniciativa académica en la materia de Administración de Proyectos, por idea del director de carrera Héctor Santillán, con el objetivo de generar impacto social real desde la universidad.",
+},
+{
+  id: "11",
+  question: "¿Quiénes participan en el proyecto?",
+  answer:
+    "RoboTap es desarrollado por estudiantes universitarios y la docente Yorka Perez que nos oriento para maximizar el impacto y desarrollo del proyecto.",
+},
+
 ];
 
 export const plans = [
   {
-    id: '0',
-    title: 'Core',
-    priceMonthly: 19,
-    priceYearly: 12,
-    caption: 'Best for solo creators',
+    id: "0",
+    title: "Tapitas Recolectadas",
+    caption: "Cada tapita suma",
+    buttonText: "Punto de recolección",
+    buttonLink: "https://maps.app.goo.gl/1EfBtZ2N27vh17mF6",
     features: [
-      '100MB Cloud storage',
-      '100+ prompt templates',
-      '5 projects',
-      '24/7 support',
+      "Ayuda directa a pacientes con quimioterapia",
+      "Recolección en puntos comunitarios",
+      "Material 100% reciclable",
+      "Impacto ambiental positivo",
     ],
-    icon: '/images/circle.svg',
-    logo: '/images/plan-1.png',
+    icon: "/images/circle.svg",
+    logo: "/images/plan-1.png",
   },
   {
-    id: '1',
-    title: 'Overdrive',
-    priceMonthly: 79,
-    priceYearly: 59,
-    caption: 'Most popular plan',
+    id: "1",
+    title: "Organizaciones Aliadas",
+    caption: "Junto a fundaciones",
+    buttonText: "Síguenos y comparte",
+    buttonLink: "https://www.instagram.com/tapitasxquimio/",
     features: [
-      'All Starter features',
-      '1TB additional storage',
-      'Unlimited projects',
-      'Analytics',
+      "Entrega transparente de tapitas",
+      "Reciclaje responsable",
+      "Fondos destinados a quimioterapia",
+      "Colaboración certificada y verificada",
     ],
-    icon: '/images/triangle.svg',
-    logo: '/images/plan-2.png',
+    icon: "/images/triangle.svg",
+    logo: "/images/plan-2.png",
   },
   {
-    id: '2',
-    title: 'Team',
-    priceMonthly: 39,
-    priceYearly: 29,
-    caption: 'Exclusively for teams',
-    features: [
-      'All Overdrive features',
-      '10TB additional storage',
-      '50% off per member',
-      'Real-time collaboration',
-    ],
-    icon: '/images/hexagon.svg',
-    logo: '/images/plan-3.png',
-  },
+  id: "2",
+  title: "Apoyo Académico",
+  caption: "Comunidad educativa",
+  buttonText: "Conoce la escuela",
+  buttonLink: "https://www.instagram.com/unphu_tic/",
+  features: [
+    "Proyecto desarrollado en el entorno educativo",
+    "Participación de estudiantes y docentes",
+    "Innovación social",
+    "Aprendizaje con impacto real",
+  ],
+  icon: "/images/hexagon.svg",
+  logo: "/images/plan-3.png",
+}
 ];
 
-export const testimonials = [
+export const joinMessages = [
   {
-    id: '0',
-    name: 'Jessica Saunders',
-    role: 'Globalnomads',
-    avatarUrl: '/images/testimonials/jessica-saunders.png',
-    comment:
-      "Xora's customer support is second to none! They’re like my tech superheroes, always there when I need them.",
+    id: "0",
+    message:
+      "Cada tapita recolectada representa esperanza para quienes luchan contra el cáncer.",
   },
   {
-    id: '1',
-    name: 'Mark Erixon',
-    role: 'Vid capital intl',
-    avatarUrl: '/images/testimonials/mark-erixon.png',
-    comment:
-      "I was skeptical at first, but now I can't imagine our content operations without it. It's that impactful.",
+    id: "1",
+    message:
+      "No necesitas grandes recursos para ayudar, solo ganas de aportar.",
   },
   {
-    id: '2',
-    name: 'Melanie Hurst',
-    role: 'Cyberleap',
-    avatarUrl: '/images/testimonials/melanie-hurst.png',
-    comment:
-      "Adopting this software was a breeze. It's made everyday tasks so much simpler.",
+    id: "2",
+    message:
+      "Únete a una comunidad que cree en el impacto de las pequeñas acciones.",
   },
   {
-    id: '3',
-    name: 'Alicia Barker',
-    role: 'Cyberleap',
-    avatarUrl: '/images/testimonials/alicia-barker.png',
-    comment:
-      "The analytics feature is like having a personal fortune teller. It's been instrumental in guiding our business decisions.",
+    id: "3",
+    message:
+      "Tu participación puede cambiar vidas y cuidar el planeta al mismo tiempo.",
   },
   {
-    id: '4',
-    name: 'Becky Snider',
-    role: 'Floclips',
-    avatarUrl: '/images/testimonials/becky-snider.png',
-    comment:
-      "Switched to Xora last month, and I'm already seeing results. Best decision for our team!",
+    id: "4",
+    message:
+      "Ser voluntario es más que ayudar, es formar parte del cambio.",
   },
   {
-    id: '5',
-    name: 'Jim Bradley',
-    role: 'Vid capital intl',
-    avatarUrl: '/images/testimonials/jim-bradley.png',
-    comment:
-      'The efficiency boost is undeniable. This platform has transformed our workflow, forever.',
+    id: "5",
+    message:
+      "Juntos transformamos reciclaje en oportunidades de vida.",
   },
 ];
 
 export const logos = [
   {
-    id: '0',
-    title: 'Afterpay',
-    url: '/images/logos/afterpay.svg',
+    id: "0",
+    title: "Logo Unphu Informática",
+    url: "/images/logos/logoInformatica.png",
     width: 156,
     height: 48,
   },
   {
-    id: '1',
-    title: 'Amplitude',
-    url: '/images/logos/amplitude.svg',
+    id: "1",
+    title: "Tapitas x Quimio",
+    url: "/images/logos/tapitasxquimio.png",
     width: 194,
     height: 48,
   },
   {
-    id: '2',
-    title: 'Sonos',
-    url: '/images/logos/sonos.svg',
+    id: "2",
+    title: "UNPHU",
+    url: "/images/logos/UNPHU.webp",
     width: 115,
     height: 48,
   },
-  {
-    id: '3',
-    title: 'Maze',
-    url: '/images/logos/maze.svg',
-    width: 142,
-    height: 48,
-  },
-  {
-    id: '4',
-    title: 'Drips',
-    url: '/images/logos/drips.svg',
-    width: 77,
-    height: 48,
-  },
 ];
-
-export const Ios = () => {
-  return (
-    <svg
-      width="32"
-      height="32"
-      viewBox="0 0 32 32"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <path
-        d="M24.9404 17.0175C24.9566 15.791 25.2903 14.5884 25.9105 13.5217C26.5307 12.4549 27.4173 11.5586 28.4876 10.9162C27.8077 9.96818 26.9106 9.18798 25.8677 8.63759C24.8249 8.0872 23.6649 7.78178 22.48 7.74559C19.9523 7.48658 17.5019 9.22215 16.2138 9.22215C14.9009 9.22215 12.9177 7.77131 10.7822 7.8142C9.40087 7.85777 8.05467 8.2499 6.87475 8.95239C5.69483 9.65487 4.72143 10.6438 4.04939 11.8227C1.13826 16.7431 3.3097 23.9744 6.09832 27.9516C7.49352 29.8992 9.12411 32.0746 11.2577 31.9975C13.3456 31.913 14.1253 30.6978 16.6456 30.6978C19.1424 30.6978 19.874 31.9975 22.0509 31.9484C24.2912 31.9129 25.7028 29.9922 27.049 28.0262C28.0514 26.6385 28.8228 25.1048 29.3345 23.4819C28.0329 22.9445 26.9222 22.0449 26.1408 20.8954C25.3594 19.7458 24.942 18.3971 24.9404 17.0175Z"
-        fill="#EAEDFF"
-      />
-      <path
-        d="M20.829 5.12933C22.0505 3.69777 22.6523 1.85774 22.5066 0C20.6403 0.191354 18.9165 1.0621 17.6784 2.43873C17.0731 3.11126 16.6095 3.89365 16.3141 4.74119C16.0187 5.58873 15.8973 6.4848 15.9569 7.37817C16.8903 7.38755 17.8138 7.19004 18.6577 6.8005C19.5017 6.41097 20.244 5.83956 20.829 5.12933Z"
-        fill="#EAEDFF"
-      />
-    </svg>
-  );
-};
-
-export const Android = () => {
-  return (
-    <svg
-      width="33"
-      height="32"
-      viewBox="0 0 33 32"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <path
-        d="M4.74 0.0459256L22.8329 10.1427L18.5589 14.2804L4.37614 0.543765C4.12087 0.295202 4.41704 -0.131925 4.72872 0.0394973L4.74 0.0459256Z"
-        fill="#EAEDFF"
-      />
-      <path
-        d="M1.8335 30.0342V1.96373C1.83368 1.90283 1.85161 1.84334 1.88505 1.79272C1.91848 1.7421 1.96592 1.70261 2.02142 1.67919C2.07692 1.65577 2.13801 1.64947 2.19703 1.66108C2.25606 1.67269 2.31038 1.70169 2.3532 1.74445L16.7828 15.9997L2.3532 30.2534C2.31038 30.2962 2.25606 30.3252 2.19703 30.3368C2.13801 30.3484 2.07692 30.3421 2.02142 30.3187C1.96592 30.2953 1.91848 30.2558 1.88505 30.2052C1.85161 30.1545 1.83368 30.0951 1.8335 30.0342Z"
-        fill="#EAEDFF"
-      />
-      <path
-        d="M4.37775 31.4555C4.12108 31.7041 4.41724 32.1312 4.73033 31.9598L4.74161 31.9534L22.8331 21.8566L18.5591 17.7175L4.37775 31.4555Z"
-        fill="#EAEDFF"
-      />
-      <path
-        d="M25.0844 11.3955L30.1368 14.214C31.5112 14.9832 31.5112 17.016 30.1368 17.7853L25.0844 20.6016L20.3338 15.9996L25.0844 11.3955Z"
-        fill="#EAEDFF"
-      />
-    </svg>
-  );
-};
 
 export const Windows = () => {
   return (
@@ -855,6 +771,33 @@ export const Windows = () => {
       <path
         d="M2.99217 26.0948L11.7925 28.1727C12.7018 28.4018 13.5672 27.6164 13.5672 26.5856V19.272C13.5672 18.3721 12.9072 17.6358 12.1005 17.6358H3.30021C2.49352 17.6358 1.8335 18.3721 1.8335 19.272V24.4913C1.8335 25.2603 2.31748 25.9312 2.99217 26.0948Z"
         fill="#EAEDFF"
+      />
+    </svg>
+  );
+};
+
+export const MapPin = () => {
+  return (
+    <svg
+      width="32"
+      height="32"
+      viewBox="0 0 24 24"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M12 22C12 22 19 15.6863 19 10.5C19 6.35786 15.866 3 12 3C8.13401 3 5 6.35786 5 10.5C5 15.6863 12 22 12 22Z"
+        stroke="#EAEDFF"
+        strokeWidth="1.8"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      <circle
+        cx="12"
+        cy="10.5"
+        r="2.5"
+        stroke="#EAEDFF"
+        strokeWidth="1.8"
       />
     </svg>
   );
@@ -909,57 +852,89 @@ export const Web = () => {
   );
 };
 
+export const Instagram = () => {
+  return (
+    <svg
+      width="32"
+      height="32"
+      viewBox="0 0 24 24"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M7 2H17C20.3137 2 23 4.68629 23 8V16C23 19.3137 20.3137 22 17 22H7C3.68629 22 1 19.3137 1 16V8C1 4.68629 3.68629 2 7 2Z"
+        stroke="#EAEDFF"
+        strokeWidth="2"
+      />
+      <circle
+        cx="12"
+        cy="12"
+        r="4"
+        stroke="#EAEDFF"
+        strokeWidth="2"
+      />
+      <circle
+        cx="17.5"
+        cy="6.5"
+        r="1.5"
+        fill="#EAEDFF"
+      />
+    </svg>
+  );
+};
+
+
 export const links = [
   {
-    id: '0',
-    title: 'Ios',
-    icon: <Ios />,
-    url: '#',
+    id: "0",
+    title: "Instagram Tapitas x Quimio",
+    icon: <Instagram />,
+    url: "https://www.instagram.com/tapitasxquimio/",
   },
   {
-    id: '1',
-    title: 'Android',
-    icon: <Android />,
-    url: '#',
+    id: "1",
+    title: "Instagram Escuela de Informática",
+    icon: <Instagram />,
+    url: "https://www.instagram.com/unphu_tic/",
   },
   {
-    id: '2',
-    title: 'Windows',
-    icon: <Windows />,
-    url: '#',
+    id: "2",
+    title: "Ubicación RoboTap UNPHU",
+    icon: <MapPin/>,
+    url: "https://maps.app.goo.gl/1EfBtZ2N27vh17mF6",
   },
   {
-    id: '3',
-    title: 'Web',
+    id: "3",
+    title: "Web de la UNPHU",
     icon: <Web />,
-    url: '#',
+    url: "https://unphu.edu.do/",
   },
 ];
 
 export const socials = [
   {
-    id: '0',
-    title: 'x',
-    icon: '/images/socials/x.svg',
-    url: '#',
+    id: "0",
+    title: "LinkedIn",
+    icon: Linkedin,
+    url: "https://www.linkedin.com/in/angel-emilio-aquino/",
   },
   {
-    id: '1',
-    title: 'Threads',
-    icon: '/images/socials/threads.svg',
-    url: '#',
+    id: "1",
+    title: "GitHub",
+    icon: Github,
+    url: "https://github.com/AngelEmilioAquino",
   },
   {
-    id: '2',
-    title: 'Instagram',
-    icon: '/images/socials/instagram.svg',
-    url: '#',
+    id: "2",
+    title: "WhatsApp",
+    icon: MessageCircle,
+    url: "https://wa.me/18094038309?text=Hola%20Angel%20Me%20gustaría%20hablar%20sobre%20un%20proyecto.",
   },
   {
-    id: '3',
-    title: 'Discord',
-    icon: '/images/socials/discord.svg',
-    url: '#',
+    id: "3",
+    title: "Portfolio",
+    icon: Globe,
+    url: "https://angelaquino.vercel.app/",
   },
 ];
 ```
@@ -1000,12 +975,6 @@ export default Marker;
 Assets used in the project can be
 found [here](https://drive.google.com/file/d/1u-l3p3qCnrwmWq5-bG7OkfCXFPYM9t5z/view?usp=sharing)
 
-## <a name="more">🚀 More</a>
 
-**Advance your skills with Next.js Pro Course**
 
-Enjoyed creating this project? Dive deeper into our PRO courses for a richer learning experience. They're packed with detailed explanations, cool features, and exercises to boost your skills. Give it a go!
 
-<a href="https://www.jsmastery.pro/ultimate-next-course" target="_blank">
-<img src="https://i.ibb.co/804sPK6/Image-720.png" alt="Project Banner">
-</a>
