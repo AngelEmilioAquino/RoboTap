@@ -1,6 +1,6 @@
 <div align="center">
   <br />
-      <img src="../RoboTap/public/images/Banner.png" alt="Project Banner">
+      <img src="../RoboTap/RoboTap/public/images/Banner.png" alt="Project Banner">
   <br />
 
   <div>
